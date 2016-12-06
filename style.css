@@ -76,23 +76,32 @@ h1{
     font-size: 4em;
     font-family: bebas-lig;
     letter-spacing: 7px;
+    color: #3d3c3f;
 }
 
 .two-in-row div{
     width:49%;
 }
 
-/*не работает: */
-.span01:before{
-    background-image: url("images/Crystal.jpg");
+.sp{
+    top: -15px;
+    left: 10px;
+    position: relative;
+}
+.span01::before{
+    content: url("images/crys.jpg");
     height: 40px;
     width: 40px;
-    content: '';
+}
+
+.span02::before{
+    content: url("images/hands.jpg");
+    height: 40px;
+    width: 40px;
 }
 
 .jumbotron{
     background-image: url("images/jumbotron-bg.jpg");
-    width: 900px;
     height: 477px;
 }
 
@@ -118,8 +127,31 @@ h1{
 .three-in-row{
     text-align: center;
   }
-.row-inner, .menu li, .two-in-row div{
+.row-inner li:before{
+    content: "- ";
+}
+.row-inner li.no-dash:before{
+    content: "";
+
+}
+.row-inner, .menu li, .two-in-row div, .item{
     display: inline-block;
+}
+
+.path, .two-in-row{
+    margin-left: 40px;
+}
+.two-in-row, .path, .jumbotron{
+    width: 900px;
+}
+
+.list{
+    background-color: #77aee3;
+    height: 192px;
+}
+
+.item::after{
+    content: url("images/list01.1.jpg");
 }
 
 
