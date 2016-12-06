@@ -9,25 +9,23 @@
 </head>
 <body>
 <div class="main-content m-center">
-<div style="height: 200px;     overflow: hidden;/*Фенька*/">
+<div>
 <div class="logo"></div>
 <span class="phone">+ 7 (499) 653-59-29</span>
 <div class="clear-fix"></div>
     <!--http://ru.stackoverflow.com/questions/142079/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80-margin-top-->
-
-
-
-</div>
-<div class="header-menu">
-    <ul>
-        <li>Отпрваить заявку</li>
-        <li>Схема работы</li>
-        <li>Преимущества</li>
-        <li>Наши клиенты</li>
-        <li>Отзывы</li>
-        <li>Контакты</li>
+    <ul class="menu">
+        <li><a href="#">Отправить заявку</a></li>
+        <li><a href="#">Схема работы</a></li>
+        <li><a href="#">Преимущества</a></li>
+        <li><a href="#">Наши клиенты</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
     </ul>
 </div>
+<!--<div class="header-menu">
+
+</div>-->
 <div class="h1-jumbotron">
     <h1 class="t-center">Одежда оптом с вашим принтом</h1>
     <div class="two-in-row">
@@ -36,6 +34,12 @@
     </div>
     <div class="jumbotron m-center">
         <div class="form">
+
+                <p>Печать в 1 краску <br><span>бесплатно</span></p>
+                <p>Имя:</p><input type="text" name="firstName">
+                <p>Ваш e-mail:</p><input type="text" name="eMail">
+                <p>Ваш телефон:</p><input type="text" name="mob">
+                <input type="submit" value="Отправить">
 
         </div>
     </div>
@@ -77,12 +81,14 @@
 <div class="grey-block">
 
 </div>
-<div class="h2-block">
+<div class="h2-block t-center">
     <h2>Остались вопросы?</h2>
-    <p>Напишите нам чего хотите</p>
-    <textarea name="" id="" cols="60" rows="10"></textarea>
-    <br>
-    <button type="button">Выберите файл</button>
+    <div>
+        <p>Напишите нам чего хотите</p>
+        <textarea name="" id="" cols="60" rows="10"></textarea>
+        <br>
+        <button type="button">Выберите файл</button>
+    </div>
     <br>
     <button type="button">Отправить</button>
 

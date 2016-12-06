@@ -19,24 +19,67 @@
 }
 
 .phone{
+    position: relative;
     color: #00a651;
-    font-size: 23px;
-    margin-top: 30px;
+    font-size: 25px;
+    top: 21px;
+    left: 27px;
+    font-family: bebas-reg;
+    letter-spacing: 3px;
 }
+
+.menu{
+    position: relative;
+    top: -55px;
+    left: 166px;
+}
+
+
+a{
+    text-decoration: none;
+    margin-right: 39px;
+    color: #3d3c3f;
+    font-family: bebas-reg;
+    font-size: 1.2em;
+}
+
+a:hover{
+    color: #00a651;
+    border-bottom: 5px solid #00a651;
+}
+
+@font-face {
+    font-family: bebas-book;
+    src: url("bebas/BebasNeue Book.otf");
+}
+
+@font-face {
+    font-family: bebas-reg;
+    src: url("bebas/BebasNeue Regular.otf");
+}
+
+@font-face {
+    font-family: bebas-lig;
+    src: url("bebas/BebasNeue Light.otf");
+}
+
 .header-menu{
     height: 100px;
 }
+
 
 .h1-jumbotron{
     height: 860px;
 }
 h1{
     text-transform: uppercase;
+    font-size: 4em;
+    font-family: bebas-lig;
+    letter-spacing: 7px;
 }
 
 .two-in-row div{
     width:49%;
-    display: inline-block;
 }
 
 /*не работает: */
@@ -54,22 +97,31 @@ h1{
 }
 
 .form{
+    top: 36px;
+    left: 34px;
     position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: #fbd5ff;
+    width: 280px;
+    height: 410px;
+    background-color: #fff;
 }
 
 .clear-fix{
     clear: both;
 }
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
 
 .three-in-row{
     text-align: center;
   }
-.row-inner{
+.row-inner, .menu li, .two-in-row div{
     display: inline-block;
 }
+
 
 li{
     list-style-type: none;
