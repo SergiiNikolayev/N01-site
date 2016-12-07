@@ -10,12 +10,15 @@
     text-align: center;
 }
 
+.top{
+    height: 120px;
+}
 .logo{
     background-image: url("images/logo.jpg");
     width: 110px;
     height: 100px;
     float: left;
-    margin-left: 67px;
+    margin-left: 60px;
 }
 
 .phone{
@@ -31,36 +34,23 @@
 .menu{
     position: relative;
     top: -55px;
-    left: 166px;
+    left: 155px;
 }
 
 
 a{
     text-decoration: none;
-    margin-right: 39px;
+    margin-right: 27px;
     color: #3d3c3f;
+    font-size: 1.3em;
+}
+a, .form-text-g, .form-text-o{
     font-family: bebas-reg;
-    font-size: 1.2em;
 }
 
 a:hover{
     color: #00a651;
     border-bottom: 5px solid #00a651;
-}
-
-@font-face {
-    font-family: bebas-book;
-    src: url("bebas/BebasNeue Book.otf");
-}
-
-@font-face {
-    font-family: bebas-reg;
-    src: url("bebas/BebasNeue Regular.otf");
-}
-
-@font-face {
-    font-family: bebas-lig;
-    src: url("bebas/BebasNeue Light.otf");
 }
 
 .header-menu{
@@ -72,32 +62,45 @@ a:hover{
     height: 860px;
 }
 h1{
-    text-transform: uppercase;
     font-size: 4em;
-    font-family: bebas-lig;
+    font-family: bebas-lig, arial, verdana;
     letter-spacing: 7px;
     color: #3d3c3f;
+    margin: 0px;
 }
 
-.two-in-row div{
-    width:49%;
+h1, .sp, .form-text-g, .form-text-o {
+    text-transform: uppercase;
+}
+
+.two-in-row div {
+    width: 49%;
+    margin-top: 20px;
+}
+
+.two-in-row div:nth-child(1){
+    left: 190px;
+    position: relative;;
 }
 
 .sp{
     top: -15px;
-    left: 10px;
+    left: 13px;
     position: relative;
+    font-family: bebas-lig;
+    font-size: 21px;
+    color: #44bd7f;
+    font-weight: bold;
 }
 .span01::before{
     content: url("images/crys.jpg");
-    height: 40px;
-    width: 40px;
+    position: relative;
+    top: -5px;
+    left: 10px;
 }
 
 .span02::before{
     content: url("images/hands.jpg");
-    height: 40px;
-    width: 40px;
 }
 
 .jumbotron{
@@ -114,6 +117,14 @@ h1{
     background-color: #fff;
 }
 
+.form-text-g, .form-text-o{
+    font-size: 40px;
+    line-height: 24px;
+    margin: 10px 10px auto 20px;
+    position: relative;
+    top: 20px;
+}
+
 .clear-fix{
     clear: both;
 }
@@ -127,6 +138,10 @@ h1{
 .three-in-row{
     text-align: center;
   }
+.row-inner{
+    font-size: 0.9em;
+}
+
 .row-inner li:before{
     content: "- ";
 }
@@ -138,16 +153,20 @@ h1{
     display: inline-block;
 }
 
-.path, .two-in-row{
+.path, .two-in-row, .h2-block{
     margin-left: 40px;
 }
-.two-in-row, .path, .jumbotron{
+.two-in-row, .path, .jumbotron, .h2-block{
     width: 900px;
 }
 
 .list{
     background-color: #77aee3;
     height: 192px;
+}
+
+.item{
+    margin-top: 26px;
 }
 
 .item::after{
@@ -159,3 +178,34 @@ li{
     list-style-type: none;
     text-align: left;
 }
+
+
+/*------------------------------------------------------------------------*/
+@-moz-document url-prefix() {
+    h1{
+        letter-spacing: 6px;
+
+    }
+
+}
+
+@font-face {
+    font-family: bebas-book;
+    src: url("bebas/BebasNeue Book.otf");
+}
+
+@font-face {
+    font-family: bebas-reg;
+    src: url("bebas/BebasNeue Regular.otf");
+}
+
+@font-face {
+    font-family: 'bebas-lig';
+    src: url('bebas/eot/bebasneue_light-webfont.eot?79729309');
+    font-weight: normal;
+    font-style: normal;
+    src: url("bebas/BebasNeue Light.otf") format('opentype'),
+    url("bebas/TTFs/BebasNeue Light.ttf") format('truetype'),
+    url("bebas/eot/bebasneue_light-webfont.eot?79729309#iefix") format('embedded-opentype');
+}
+/*------------------------------------------------------------------------*/
