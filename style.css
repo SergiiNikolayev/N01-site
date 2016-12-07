@@ -125,6 +125,16 @@ h1, .sp, .form-text-g, .form-text-o {
     top: 20px;
 }
 
+.form-text-g{
+    color: #00a551;
+}
+.form-text-o{
+    color: #e75700;
+}
+
+.form div{
+    margin: 40px 10px auto 25px;
+}
 .clear-fix{
     clear: both;
 }
