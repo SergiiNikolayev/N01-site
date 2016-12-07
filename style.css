@@ -135,6 +135,35 @@ h1, .sp, .form-text-g, .form-text-o {
 .form div{
     margin: 40px 10px auto 25px;
 }
+.form div span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 20px;
+    margin-top: 2px;
+
+}
+/*input height, width*/
+input[type="text"]{
+    padding: 5px 0px;
+    line-height: 20px;
+}
+
+input[type="submit"] {
+    padding: 15px 30px;
+    background:#e45100;
+    color: #f9dcca;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin: 20px 40px;
+}
+
+
+
 .clear-fix{
     clear: both;
 }
@@ -197,7 +226,13 @@ li{
 
     }
 
+    input[type="text"]{
+        padding: 5px 10px;
+        line-height: 20px;
+    }
+
 }
+/*------------------------------------------------------------------------*/
 
 @font-face {
     font-family: bebas-book;
@@ -217,5 +252,12 @@ li{
     src: url("bebas/BebasNeue Light.otf") format('opentype'),
     url("bebas/TTFs/BebasNeue Light.ttf") format('truetype'),
     url("bebas/eot/bebasneue_light-webfont.eot?79729309#iefix") format('embedded-opentype');
+}
+/*------------------------------------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+    ::i-block-chrome, .yourcssrule {
+        your css property
+    }
 }
 /*------------------------------------------------------------------------*/
