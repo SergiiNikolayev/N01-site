@@ -17,7 +17,6 @@
     background-image: url("images/logo.jpg");
     width: 110px;
     height: 100px;
-    float: left;
     margin-left: 60px;
 }
 
@@ -167,7 +166,7 @@ input[type="submit"] {
 .clear-fix{
     clear: both;
 }
-.f-left{
+.f-left, .logo, .grey-block-item div, .grey-block-item img{
     float: left;
 }
 .f-right{
@@ -192,7 +191,7 @@ input[type="submit"] {
     display: inline-block;
 }
 
-.path, .two-in-row, .h2-block{
+.path, .two-in-row, .h2-block, .grey-block{
     margin-left: 40px;
 }
 .two-in-row, .path, .jumbotron, .h2-block{
@@ -218,7 +217,28 @@ li{
     text-align: left;
 }
 
+.grey-block{
+    /*height: 455px;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 
+}
+.grey-block-item{
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+
+.h2-block div{
+    width: 510px;
+
+}
 /*------------------------------------------------------------------------*/
 @-moz-document url-prefix() {
     h1{
