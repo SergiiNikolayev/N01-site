@@ -65,7 +65,7 @@ h1{
     font-family: bebas-lig, arial, verdana;
     letter-spacing: 7px;
     color: #3d3c3f;
-    margin: 0px;
+    margin: 0;
 }
 
 h1, .sp, .form-text-g, .form-text-o {
@@ -146,7 +146,7 @@ input{
 }
 /*input height, width*/
 input[type="text"]{
-    padding: 5px 0px;
+    padding: 5px 0;
     line-height: 20px;
 }
 
@@ -166,7 +166,7 @@ input[type="submit"] {
 .clear-fix{
     clear: both;
 }
-.f-left, .logo, .grey-block-item div, .grey-block-item img{
+.f-left,.logo, .grey-block-item div, .grey-block-item img{
     float: left;
 }
 .f-right{
@@ -183,7 +183,7 @@ input[type="submit"] {
 .row-inner li:before{
     content: "- ";
 }
-.row-inner li.no-dash:before{
+.row-inner .no-dash:before{
     content: "";
 
 }
@@ -226,6 +226,8 @@ li{
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+    background: #cccccc;
+    padding: 20px;
 
 }
 .grey-block-item{
@@ -235,10 +237,17 @@ li{
 }
 
 
-.h2-block div{
+.h3-block div{
     width: 510px;
 
 }
+
+.btn-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+
 /*------------------------------------------------------------------------*/
 @-moz-document url-prefix() {
     h1{
@@ -274,10 +283,10 @@ li{
     url("bebas/eot/bebasneue_light-webfont.eot?79729309#iefix") format('embedded-opentype');
 }
 /*------------------------------------------------------------------------*/
-
+/*
 @media only screen and (-webkit-min-device-pixel-ratio: 1) {
     ::i-block-chrome, .yourcssrule {
         your css property
     }
-}
+}*/
 /*------------------------------------------------------------------------*/
