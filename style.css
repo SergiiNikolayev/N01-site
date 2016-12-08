@@ -187,7 +187,7 @@ input[type="submit"] {
     content: "";
 
 }
-.row-inner, .menu li, .two-in-row div, .item{
+.row-inner, .menu li, .two-in-row div, .item, .text-list{
     display: inline-block;
 }
 
@@ -212,11 +212,15 @@ input[type="submit"] {
     margin-right: 10px;
 }
 
-.item::after{
+.item::before{
     content: url("images/list01.1.jpg");
 }
-.item:last-child::after{
+.item:first-child::before{
     content: '';
+}
+.text-list{
+    margin: -10px 42px 0px 41px;
+    color: #ffffff;
 }
 
 li{
