@@ -194,23 +194,30 @@ input[type="submit"] {
 .path, .two-in-row, .h2-block, .grey-block{
     margin-left: 40px;
 }
-.two-in-row, .path, .jumbotron, .h2-block{
+.two-in-row, .path, .jumbotron, .h2-block, .grey-block{
     width: 900px;
 }
 
 .list{
     background-color: #77aee3;
     height: 192px;
+    padding-top: 20px;
 }
 
 .item{
-    margin-top: 26px;
+    margin-right: 3px;
+}
+
+.item img{
+    margin-right: 10px;
 }
 
 .item::after{
     content: url("images/list01.1.jpg");
 }
-
+.item:last-child::after{
+    content: '';
+}
 
 li{
     list-style-type: none;
@@ -227,7 +234,7 @@ li{
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     background: #cccccc;
-    padding: 20px;
+    /*padding: 20px;*/
 
 }
 .grey-block-item{
