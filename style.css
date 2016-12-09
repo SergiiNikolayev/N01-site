@@ -1,3 +1,7 @@
+body{
+    font-family: arial, verdana, tahoma;
+}
+
 .main-content{
     width: 980px;
 }
@@ -76,6 +80,9 @@ h2,h3{
     color: #3d3c3f;
     font-size: 34px;
 }
+h2{
+    margin-top: 0;
+}
 
 .two-in-row div {
     width: 49%;
@@ -142,6 +149,7 @@ h2,h3{
 .form div span{
     font-size: 14px;
     font-weight: bold;
+    color: #333333;
 }
 
 input{
@@ -153,6 +161,7 @@ input{
 input[type="text"]{
     padding: 5px 0;
     line-height: 20px;
+    background-image: url("images/star.jpg");
 }
 
 input[type="submit"] {
@@ -223,7 +232,7 @@ input[type="submit"] {
 
 .list{
     background-color: #77aee3;
-    height: 192px;
+    height: 172px;
     padding-top: 20px;
 }
 
@@ -261,25 +270,46 @@ li{
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     background: #cccccc;
-    /*padding: 20px;*/
+    padding: 15px 0;
 
 }
-.grey-block-item{
+.grey-block-item {
     width: 47%;
-    margin-top: 10px;
-    margin-left: 20px;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
 }
 
+.grey-block-item h4{
+    margin: 17px auto auto 120px;
+    color: #020202;
+}
+
+.grey-block-item p{
+    margin: 18px auto auto 120px;
+    font-size: 15px;
+}
 
 .h3-block div{
     width: 510px;
-
 }
 
+.h3-block div p{
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 6px;
+    margin-left: 3px;
+}
+.btn-ltl{
+    margin: 20px auto auto 3px;
+}
 .btn-bottom {
     display: flex;
     justify-content: center;
+}
+.btn-bottom input{
+    width: 250px;
+    margin-top: 30px;
 }
 
 
