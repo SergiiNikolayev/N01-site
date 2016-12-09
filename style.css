@@ -26,7 +26,6 @@
     font-size: 25px;
     top: 21px;
     left: 27px;
-    font-family: bebas-reg;
     letter-spacing: 3px;
 }
 
@@ -43,7 +42,7 @@ a{
     color: #3d3c3f;
     font-size: 1.3em;
 }
-a, .form-text-g, .form-text-o{
+a, h2, h3, .form-text-g, .form-text-o, .phone{
     font-family: bebas-reg;
 }
 
@@ -70,6 +69,12 @@ h1{
 
 h1, .sp, .form-text-g, .form-text-o {
     text-transform: uppercase;
+}
+
+h2,h3{
+    letter-spacing: 3px;
+    color: #3d3c3f;
+    font-size: 34px;
 }
 
 .two-in-row div {
@@ -175,19 +180,37 @@ input[type="submit"] {
 
 .three-in-row{
     text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
   }
 .row-inner{
     font-size: 0.9em;
+    line-height: 21px;
+
+}
+.row-inner li{
+    color: #3d3c3f;
 }
 
+.row-inner ul{
+    padding-left: 13px;
+}
+
+
+
 .row-inner li:before{
-    content: "- ";
+    content: '- ';
 }
 .row-inner .no-dash:before{
     content: "";
 
 }
-.row-inner, .menu li, .two-in-row div, .item, .text-list{
+/*.row-inner, */.menu li, .two-in-row div, .item, .text-list{
     display: inline-block;
 }
 
