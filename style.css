@@ -359,6 +359,13 @@ li{
     ::i-block-chrome, .someClass {
         color:#000;
     }
+    ::i-block-chrome, div h1 {
+        letter-spacing: 4px;
+    }
+    ::i-block-chrome, .row-inner ul {
+        padding-left: 40px;
+    }
+
     ::i-block-chrome, .two-in-row div {
         width: 46%;
         margin-top: 20px;
@@ -375,6 +382,17 @@ li{
         display: inline-block;
     }
 
+
+    ::i-block-chrome, .h3-block div .safa {
+        margin-left: 32px;
+    }
+    ::i-block-chrome, div .btn-ltl {
+        margin: 20px auto auto 30px;
+    }
+
+    ::i-block-chrome, .btn-bottom input {
+        margin-left:70px;
+    }
 
 }
 /*------------------------------------------------------------------------*/
